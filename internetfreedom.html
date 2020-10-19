@@ -95,7 +95,7 @@
                         <div class="row">
                               <div class="col-lg-12">
                                    
-                                    <h3 class="wow fadeInUp" data-wow-delay="1s">Lv.1 ใช้แอปติดต่อสื่อสารถูกปิดกันได้ยาก</h3>
+                                    <h3 class="wow fadeInUp" data-wow-delay="1s">Lv.1 ใช้แอปติดต่อสื่อสารที่ถูกปิดกันได้ยาก</h3>
                                     <br></br>
                                     <h5 class="wow fadeInUp" data-wow-delay="1.2s">⬥Telegram</h5>
                                     <p class="wow fadeInUp" data-wow-delay="1.2s">[ระดับความยาก: ง่าย]</p>
@@ -106,14 +106,21 @@
                                          ข้อมูลแบบฉบับของตัวเองในชื่อ MTProto ซึ่งมีการเข้ารหัสระหว่างเซิร์ฟเวอร์และเครื่องผู้ใช้ ก่อนที่จะมีการรับ-ส่งข้อมูลหากัน 
                                          ด้วยกุญแจเข้ารหัสหลายระดับ โดยตัวข้อความจะได้รับการเข้ารหัสแบบ SHA-256 ก่อนเป็นขั้นแรก และมีการประกอบกับอีกหลายกุญแจทั้งแบบ 
                                          64, 128 และ 256 บิตในขั้นถัดๆ ไป สุดท้ายแล้วจะใช้การเข้ารหัสแบบ AES-256 ก่อนส่งข้อมูลออกไปและระบบ network
-                                         ที่ใช้ในแอปจะเป็นp2pที่ยากต่อการปิดกั้น
+                                         ที่ใช้ใน App หลักๆจะเป็น P2P (Peer-to-Peer) ที่ยากต่อการปิดกั้นแม้แต่รัฐบาลจันหรือรัสเซียเคยทำสงครามกับ App นี้แบนไปถึง 19,000,000 IP Adress สรุปยอมแพ้
+                                    </p>
+                                    <p class="wow fadeInUp" data-wow-delay="1.2s">
+                                          ※ E2EE (End-to-end encryption) ไม่ได้เปิดไว้เป็นค่าเริ่มต้นจะต้องเปิด Secret Chats ก่อนถึงจะใช้ได้
                                     </p>
                                     <h5 class="wow fadeInUp" data-wow-delay="1.2s">⬥Signal</h5>
                                     <p class="wow fadeInUp" data-wow-delay="1.2s">[ระดับความยาก: ง่าย]</p>
                                     <img class="wow fadeInUp center" src="https://lh3.googleusercontent.com/jCln_XT8Ruzp7loH1S6yM-ZzzpLP1kZ3CCdXVEo0tP2w5HNtWQds6lo6aLxLIjiW_X8" alt="Signal" style="width: 30%; height: auto">
                                     <br></br>
                                     <p class="wow fadeInUp" data-wow-delay="1.2s">
-                                          โดยรวมมีความคล้ายกับ Telegram แต่มี protocal ด้านความปลอดภัยหนาแน่นกว่าที่ชื่อ Signal Protocol ที่ใช้เทคนิค  Double Ratchet algorithm และใช้  Curve25519, AES-256 และ HMAC-SHA256 ริเริมและพัฒนาโดย Edward Snowden
+                                          โดยรวมมีความคล้ายกับ Telegram แต่มี protocal ด้านความปลอดภัยหนาแน่นกว่าที่ชื่อ Signal Protocol ที่ใช้เทคนิค  
+                                          Double Ratchet algorithm และใช้  Curve25519, AES-256 และ HMAC-SHA256 ริเริมและพัฒนาโดย Edward Snowden
+                                    </p>
+                                    <p class="wow fadeInUp" data-wow-delay="1.2s">
+                                          ※ E2EE(End-to-end encryption) ถูกเปิดไว้เป็นค่าเริ่มต้น
                                     </p>
 
                                     <h5 class="wow fadeInUp" data-wow-delay="1.2s">⬥Bridgefy</h5>
@@ -123,7 +130,10 @@
                                     <p class="wow fadeInUp" data-wow-delay="1.2s">
                                           แอพพลิเคชั่นตัวนี้จะใช้ระบบ Bluetooth Mesh System ในการค้นหาคนที่เล่น Bridgefy เหมือนกันรอบตัวเราในรัศมี 100 เมตร 
                                           และเชื่อมต่อคนเหล่านั้นเข้าด้วยกันในห้องแชตสาธารณะโดยไม่จำเป็นต้องใช้อินเตอร์เน็ตหรือสัญญาณมือถือแต่อย่างใดต่อให้เน็ตล่มหรือ
-                                          โดนตัดสัญณานก็ไม่ได้รับผลกระทบเท่าไหร่แต่มีข้อจำกัดคือต้องมีคนท Bridgefy เหมือนกันรอบตัวเราในรัศมี 10~100 เมตรไม่งั้นจะใช้ไม่ได้
+                                          โดนตัดสัญณานก็ไม่ได้รับผลกระทบเท่าไหร่
+                                    </p>
+                                    <p class="wow fadeInUp" data-wow-delay="1.2s">
+                                          ※ ข้อจำกัดคือต้องมีคนท Bridgefy เหมือนกันรอบตัวเราในรัศมี 10~100 เมตรไม่งั้นจะใช้ไม่ได้
                                     </p>
 
                                     <!--<img class="wow fadeInUp" src="" alt="Null" style="align-items: center; width:100%;">-->
