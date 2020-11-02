@@ -10,6 +10,10 @@ html, body {
       color: #fff !important;
 }
 
+p {
+      font-family: "Niramit", sans-serif;
+}
+
 .bgimg {
       background-image: url("Head.jpg");
       background-position: center;
@@ -367,26 +371,26 @@ h6 {
 
 
 .type4 {
-      background: url(n.jpg) no-repeat 50% 50% ;
+      background: url(n1.jpg) no-repeat 50% 50% ;
       background-size: cover;
 }
 
 .type5 {
-      background: url(23.jpg) no-repeat 20% 50% ;
+      background: url(n2.jpg) no-repeat 20% 50% ;
       background-size: cover;
 }
 
 .type6 {
-      background: url(sushi-2.jpg) no-repeat 40% 30% ;
+      background: url(n3.jpg) no-repeat 40% 30% ;
       background-size: cover;
 }
 .type7 {
-      background: url(0006BI09CEED7542331BC6j.jpg) no-repeat 40% 30% ;
+      background: url(n4.jpg) no-repeat 40% 30% ;
       background-size: cover;
 }
 
 .type8 {
-      background: url(090871_block02_02.jpg) no-repeat 40% 40% ;
+      background: url(n5.jpg) no-repeat 40% 40% ;
       background-size: cover;
 }
 @media(max-width: 768px) {
@@ -438,7 +442,7 @@ h6 {
 }
 
 .info h4 {
-      font-size: 18px;
+      font-size: 25px;
       font-weight: lighter;
 }
 
@@ -543,7 +547,7 @@ h6 {
 }
 
 .image {
-      background: url(Sushi-Header.jpg) no-repeat 50% 70%;
+      background: url(m1.jpg) no-repeat 50% 70%;
       background-size: cover
 }
 
