@@ -14,6 +14,43 @@ p {
       font-family: "Niramit", sans-serif;
 }
 
+a {
+      font-family: "Sriracha", sans-serif !important;
+      text-decoration: none;
+      text-transform: none;
+}
+
+a.button{
+      font-family: "Sriracha", sans-serif !important;
+      text-decoration: none;
+      text-transform: none;
+}
+
+table {
+      color: rgb(255, 255, 255) !important;
+      font-family: "Niramit", sans-serif !important;
+}
+
+.form-control {
+      background: #ffffff00 !important;
+      color: rgb(255, 255, 255) !important;
+      font-family: "Sriracha", sans-serif !important;
+}
+
+.my-custom-scrollbar {
+      position: relative;
+      height: 440px;
+      overflow: auto;
+      }
+      
+.table-wrapper-scroll-y {
+      display: block;
+      }
+
+.hero {
+      cursor: pointer;
+  }
+
 .bgimg {
       background-image: url("Head.jpg");
       background-position: center;
@@ -159,8 +196,9 @@ nav #menu li a:hover {
 
 #toggle {
       position: absolute;
-      right: 30px;
-      top: 20px;
+      font-size: 45px;
+      right: 23px;
+      top: 1px;
       font-weight: 300;
       z-index: 2;
       width: 30px;
@@ -174,11 +212,12 @@ nav #menu li a:hover {
 
 .close-btn {
       position: absolute;
-      right: 16px;
+      font-size: 35px;
+      right: 26px;
       font-weight: 300;
       z-index: 2;
       cursor: pointer;
-      top: -2px;
+      top: 2px;
       line-height: 80px;
 }
 
@@ -191,13 +230,13 @@ nav #menu li a:hover {
       height: 100%;
       visibility: hidden;
       opacity: 0;
-      transition: all 0.25s ease-in;
+      transition: all 0.25s ease-in-out;
 }
 
 #resize #menu {
       height: 90px;
       position: absolute;
-      left: 45%;
+      left: 40%;
       transform: translateX(-40%);
       text-align: center;
       display: table-cell;
@@ -207,16 +246,16 @@ nav #menu li a:hover {
 #resize #menu li {
       display: block;
       text-align: center;
-      padding: 10px 0;
+      padding: 10% 0%;
       font-size: 50px;
       min-height: 50px;
       font-weight: bold;
       cursor: pointer;
-      transition: all 0.25s ease-in;
+      transition: all 0.25s ease-in-out;
 }
 
 #resize li:nth-child(1) {
-      margin-top: 140px;
+      margin-top: 100%;
 }
 
 #resize #menu li a {
