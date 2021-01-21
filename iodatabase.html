@@ -16,9 +16,12 @@
       <!-- bootstrap cdns -->
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
 
       <!-- fontawesome cdns -->
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.0/css/all.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
       <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
       <!-- google fonts -->
@@ -33,6 +36,7 @@
       <link rel="stylesheet" href="animate.css">
       <script src="wow.min.js"></script>
 
+
 </head>
 
 <body>
@@ -41,13 +45,13 @@
             <!--------------- navbar starts here --------------->
             <nav>
                   <span id="brand">
-                        <a href="index.html">Free|||Finger</a>
+                        <a href="index.html" class="circleScaleBtn2">Free|||Finger</a>
                   </span>
 
                   <ul id="menu">
-                        <li><a href="cybersafety.html">CyberSafety<span></span></a></li>
-                        <li><a href="internetfreedom.html">Internet Freedom<span></span></a></li>
-                        <li><a href="advance.html">Advance<span></span></a></li>
+                        <li><a href="cybersafety.html" class="borderFade"><i class="fas fa-shield-alt"></i> CyberSafety<span></span></a></li>
+                        <li><a href="internetfreedom.html" class="borderFade"><i class="fas fa-globe"></i> Internet Freedom<span></span></a></li>
+                        <li><a href="advance.html" class="borderFade"><i class="fas fa-laptop-code"></i> Advance<span></span></a></li>
                   </ul>
 
                   <div id="toggle">
@@ -62,9 +66,9 @@
                   </div>
 
                   <ul id="menu">
-                        <li><a href="cybersafety.html">CyberSafety<span></span></a></li>
-                        <li><a href="internetfreedom.html">Internet Freedom<span></span></a></li>
-                        <li><a href="advance.html">Advance<span></span></a></li>
+                        <li><a href="cybersafety.html" class="borderFade"><i class="fas fa-shield-alt"></i> CyberSafety<span></span></a></li>
+                        <li><a href="internetfreedom.html" class="borderFade"><i class="fas fa-globe"></i> Internet Freedom<span></span></a></li>
+                        <li><a href="advance.html" class="borderFade"><i class="fas fa-laptop-code"></i> Advance<span></span></a></li>
                   </ul>
             </div>
 
@@ -78,8 +82,8 @@
                         <br></br>
                         <div class="row">
                               <div class="col-lg-12">
-                                    <h1 class="wow fadeInUp" data-wow-delay="0.4s">IO Database</h1>
-                                    <br></br>
+                                    <h1 class="wow fadeInUp" data-wow-delay="0.4s"><i class="fas fa-database"></i> IO Database</h1>
+                                    <br>
                                     <p class="wow fadeInUp" data-wow-delay="0.5s">
                                           ในสถานการณ์ปัจบันมีมือมืดกำลังจะพยายามที่ปลุกปั้นหรือปลอม accounts กับประชาชนทาง cyber เราจะต้องป้องกันไม่ให้เราตกเป็นเหยื่อได้ง่ายๆ
                                     </p>
@@ -93,34 +97,139 @@
 
             <!--------------- content info section starts here --------------->
             
-
             <div class="container">
                   <div class="hero-content">
                         <br></br>
                         <div class="row">
                               <div class="col-lg-12">
-                                    <h3 class="wow fadeInUp" data-wow-delay="0.4s">★ IO Data List</h3>
+                                    <h3 class="wow fadeInUp" data-wow-delay="0.4s"><i class="fas fa-bullhorn"></i> IO Report</h3>
                                     <p class="wow fadeInUp" data-wow-delay="0.5s">
-                                          ทางเราได้รวบรวมข้อมูลของ IO ไว้ที่นี่ท่านสามารถค้นหาหรือโหลดไปดูในรูปแบบไฟล์ CVS ได้
+                                          <span class="badge badge-light">ฉันจะแจ้ง</span> accounts ที่ปลุกปั้น, Fake Account หรือ เป็น IO ได้ที่ไหน
                                     </p>
                                     <div class="container wow fadeInUp" data-wow-delay="0.5s">
-                                    <input class="form-control " id="ioInput" type="text" placeholder="🔍 Search">
-                                    <p class="wow fadeInUp" data-wow-delay="0.5s"> <span class="badge badge-light">'Type'</span> คือชนิดของ Account ตัวอย่างเช่น IO, Fake Account</p>
+                                    <p class="wow fadeInUp" data-wow-delay="0.5s"> <span class="badge badge-light">แจ้ง</span> ได้ที่ปุ่มด้านล่างนี้ได้เลย <i class="fas fa-arrow-circle-down"></i></p>
+                                    </div>
+                                    <button type="button" onclick="location.href='http://m.me/free3finger'" class="btn btn-outline-light btn-lg btn-block btn-lg wow fadeInUp" data-wow-delay="0.5s" ><i class="fab fa-facebook-messenger"></i> Free|||Finger</button>
+                                    
+      
+                              </div>
+                        </div>
+                  </div>
+            </div>
 
-                                   
+            <div class="container">
+                  <div class="hero-content">
+                        <br></br>
+                        <div class="row">
+                              <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.5s">
+                                    <h3 class="wow fadeInUp" data-wow-delay="0.4s"><i class="fas fa-chart-pie"></i> IO Report Chart</h3>
+                                    <p class="wow fadeInUp" data-wow-delay="0.5s">
+                                          <span class="badge badge-light">Chart</span> แบ่งแหล่ง IO ตาม Platform ที่พบ</p>
+                                          <p class="wow fadeInUp" data-wow-delay="0.5s">
+                                                <p class="wow fadeInUp" data-wow-delay="0.5s"><span class="badge badge-pill list2"><i class="far fa-bell ripple2"></i> Lasted update</span> 
+                                                      <i class="fas fa-calendar-day"></i> <span id="time"></span>
+                                                </p>
+                                                <div class="row wow fadeInUp" data-wow-delay="0.5s">
+                                                      <div class="col-sm-12">
+                                                            <div class="card text-white border-light mb-1 mb-1 bg-custom-1 wow fadeInUp" data-wow-delay="0.6s" style="height: 3rem;">
+                                                                  <div class="card-body borderFade"><h5 class="cen">Total</h5>
+                                                                    <h5 class="card-title centered"> <span id="sum"></span> ราย</h5>
+                                                                  </div>
+                                                            </div>  
+                                                      </div>
+                                                      <div class="col-sm-4">
+                                                            <div class="card text-white border-light mb-1 bg-custom-1 wow fadeInUp" data-wow-delay="0.6s" style="height: 3rem;">
+                                                                  <div class="card-body borderFade"><i class="fab fa-facebook cen"></i>
+                                                                    <h5 class="card-title centered"> <span id="face"></span></h5>
+                                                                  </div>
+                                                            </div>
+                                                     
+                                                            <div class="card text-white border-light mb-1 bg-custom-1 wow fadeInUp" data-wow-delay="0.6s" style="height: 3rem;">
+                                                                  <div class="card-body borderFade"><i class="fab fa-instagram cen"></i>
+                                                                    <h5 class="card-title centered"> <span id="ig"></span></h5>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-sm-4">
+                                                             <div class="card text-white border-light mb-1 bg-custom-1 wow fadeInUp" data-wow-delay="0.6s" style="height: 3rem;">
+                                                                  <div class="card-body borderFade"><i class="fab fa-twitter cen"></i>
+                                                                    <h5 class="card-title centered"> <span id="twitter"></span></h5>
+                                                                  </div>
+                                                            </div>
+                                                      
+                                                            <div class="card text-white border-light mb-1 bg-custom-1 wow fadeInUp" data-wow-delay="0.6s" style="height: 3rem;">
+                                                                  <div class="card-body borderFade"><i class="fab fa-youtube cen"></i>
+                                                                    <h5 class="card-title centered"> <span id="youtube"></span></h5>
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <div class="col-sm-4">
+                                                            <div class="card text-white border-light mb-1 bg-custom-1 wow fadeInUp" data-wow-delay="0.6s" style="height: 3rem;">
+                                                                  <div class="card-body borderFade"><i class="fab fa-tiktok cen"></i>
+                                                                    <h5 class="card-title centered"> <span id="tiktok"></span></h5>
+                                                                  </div>
+                                                            </div>
+                                                      
+                                                            <div class="card text-white border-light mb-1 bg-custom-1 wow fadeInUp" data-wow-delay="0.6s" style="height: 3rem;">
+                                                                  <div class="card-body borderFade"><i class="fas fa-external-link-alt cen"></i>
+                                                                    <h5 class="card-title centered"> <span id="other"></span></h5>
+                                                                  </div>
+                                                            </div>
+                                                    </div>
+                                    </p>
+                                          <div class="container wow fadeInUp" data-wow-delay="0.5s">
+                                          <br></br>
+                                          </div>
+                                    <canvas id="ioChart"></canvas>
+                              </div>
+                             
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+
+            <div class="container">
+                  <div class="hero-content">
+                        <br></br>
+                        <div class="row">
+                              <div class="col-lg-12 wow fadeInUp" data-wow-delay="0.5s">
+                                    <h3 class="wow fadeInUp" data-wow-delay="0.4s"><i class="fas fa-list-ul"></i> IO Data List</h3>
+                                    <p class="wow fadeInUp" data-wow-delay="0.5s">
+                                          ทางเราได้รวบรวมข้อมูลของ IO ไว้ที่นี่ท่านสามารถค้นหาหรือโหลดไปดูในรูปแบบไฟล์ CSV ได้
+                                    </p>
+                                    <div class="wow fadeInUp" data-wow-delay="0.5s">
+                                     <!--
+                                    <form class="form-inline"  action="ioinput">
+                                          <div class="form-group">
+                                                <input type="text" class="form-control" id="ioinput" placeholder="🔍Search">
+                                          
+                                                 <button type="submit" class="btn btn-outline-light btn-block btn-lg wow fadeInUp" data-wow-delay="0.5s" >IO Data List</button>
+                                                     <h5 class="centered"> <span id="ioOutput"></span></h5>
+                                          </div>
+                                    </form>
+                                    -->
+                                    
+                                    <button type="button" data-toggle="modal" data-target="#ioTable" class="btn btn-outline-light btn-block btn-lg wow fadeInUp" data-wow-delay="0.6s" ><i class="fas fa-list-ul"></i> View Data List</button>
+                                     
+                                     <!--
+                                    <input class="form-control " id="ioInput" type="text" placeholder="🔍Search">
+                                    <p class="wow fadeInUp" data-wow-delay="0.5s"> <span class="badge badge-light">'Type'</span> คือชนิดของ Account ตัวอย่างเช่น IO, Fake Account</p>
+                                    
                                     <div class="wow fadeInUp border border-light table table-striped table-responsive table-wrapper-scroll-x my-custom-scrollbar" id="io_table" data-wow-delay="0.5s">
                                               
                                           <div id="io_table"></div>
                                           
                                     </div>
-
+                              
                                     
                                     <br>
-                                    <a href="IODatabase.csv" download="IODatabase.csv"> 
-                                    <button type="button" class="btn btn-outline-light btn-lg btn-block btn-lg wow fadeInUp" data-wow-delay="0.6s" >Download CVS</button>
-                                          </a> 
-                                     </div>
-      
+                              
+                                    <button type="button" onclick="location.href='https://docs.google.com/spreadsheets/d/e/2PACX-1vTpQsOTqDkmWtr7NG_X97e6NS0BBacVAwQRjQ8qUw52QnmDFpTYuVShUX5eWsCoAcSO_oVzAxBikZ7D/pub?gid=0&single=true&output=csv'" class="btn btn-outline-light btn-lg btn-block btn-lg wow fadeInUp" data-wow-delay="0.6s" ><i class="fas fa-file-download"></i> Download CSV</button>
+                              -->
+                                    </div>
+                                    <br>
+                                    
                               </div>
                         </div>
                   </div>
@@ -137,13 +246,11 @@
                         <div class="project-nav">
                               <div class="container">
                                     <div class="row">
-                                          <div class="col-lg-6 prev" data-wow-delay="0.2s"
-                                                onclick="location.href='advance.html'">
-                                                <p class="wow fadeInUp">⟵ Advance</p>
+                                          <div class="col-sm-6 prev" data-wow-delay="0.2s">
+                                                <p class="wow fadeInUp"> <span class="wow fadeInUp list badge badge-pill badge-light circleScaleBtn2"  type="button" onclick="location.href='advance.html'"><i class="fas fa-arrow-circle-left"></i> Advance</span></p>
                                           </div>
-                                          <div class="col-lg-6 next" data-wow-delay="0.2s"
-                                                onclick="location.href='index.html'">
-                                                <p class="wow fadeInUp">Home ⟶</p>
+                                          <div class="col-sm-6 next" data-wow-delay="0.2s">
+                                                <p class="wow fadeInUp"> <span class="wow fadeInUp list badge badge-pill badge-light circleScaleBtn2"  type="button" onclick="location.href='index.html'">Home <i class="fas fa-arrow-circle-right"></i></span></p>
                                           </div>
                                     </div>
                               </div>
@@ -166,25 +273,21 @@
       
                         <div class="info">
                               <div class="row">
-                                    <div class="col-lg-4" id="personal">
-                                          <p class="wow fadeInUp">3.0.0BETA2020R2</p>
-                                          <h4 class="wow fadeInUp" data-wow-delay="0.2s">Free|||Finger</h4>
-                                          <br><br>
+                                    <div class="col-md-4" id="personal">
+                                          <h5 class="wow fadeInUp footer" data-wow-delay="0.2s">Free|||Finger</h5>
+                                          <p class="wow fadeInUp list badge badge-pill circleScaleBtn2" type="button" onclick="location.href='https://creativecommons.org/publicdomain/zero/1.0/'"><i class="fab fa-creative-commons"></i> <i class="fab fa-creative-commons-zero"></i> <i class="fab fa-creative-commons-share"></i></p>
                                     </div>
       
-                                    <div class="col-lg-0" id="media">
+                                   
       
-                                    </div>
-      
-                                    <div class="col-lg-8" id="media">
-                                          <p class="wow fadeInUp" data-wow-delay="0s">"Cybersafety & Internet Freedom"</p>
-      
+                                    <div class="col-md-8" id="media">
+
                                           <ul>
-                                                <li class="wow fadeInUp" type="button" onclick="location.href='https://www.facebook.com/free3finger'" data-wow-delay="0.4s"><i class="fab fa-facebook"></i> Free|||Finger</li>
-                                                
+                                                <li class="wow fadeInUp" data-wow-delay="0.4s"> <p class="wow fadeInUp list1 badge badge-pill badge-light circleScaleBtn2" type="button" onclick="location.href='https://www.facebook.com/free3finger'"><i class="fab fa-facebook"></i> Free|||Finger</p> </li>
                                           </ul>
+                                          <p class="wow fadeInUp list2 badge badge-pill badge-light circleScaleBtn2" type="button" onclick="location.href='https://creativecommons.org/publicdomain/zero/1.0/'"><i class="fas fa-info-circle"></i> ข้อกำหนด นโยบายความเป็นส่วนตัว</p>
       
-                                          <br><br>
+                                          
                                     </div>
                               </div>
                         </div>
@@ -192,15 +295,103 @@
             </div>
             <!--------------- footer ends here --------------->
 
-            <br><br><br><br>
+            <br></br>
 
       </div>
+  
+      <div id="myModal" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered">
 
+              <div class="modal-content ripple1">
+                <div class="modal-header">
+                  <h4 class="modal-title"><i class="fas fa-info-circle"></i> ข้อตกลงเงื่อนใขในการใช้งาน</h4>
+                </div>
+                <div class="modal-body modal1">
+                  <p>1.รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO</p>
+                  <p>2.รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO</p>
+                  <p>3.รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO</p>
+                  <p>4.รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO</p>
+                  <p>5.รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO</p>
+                  <p>6.รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO</p>
+                  <p>7.รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO</p>
+                  <p>8.รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO</p>
+                  <button disabled type="button" onclick="location.href='termsofservice.html'" class="btn btn-outline-dark btn-warning fadeInUp"  style="float:right;" >Learn more</button>
+                </div>
+                <div class="modal-footer pulseBtn">
+                  <button type="button" class="btn btn-outline-dark btn-warning btn-lg btn-block " data-dismiss="modal"><i class="fas fa-check-circle"></i> ยอมรับข้อตกลงเงื่อนใขการใช้</button>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+     
+<!--  
+          <div id="team" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered">
+             
+              <div class="modal-content ripple1">
+                <div class="modal-header">
+                  <h4 class="modal-title"><i class="fas fa-info-circle"></i> ข้อตกลงเงื่อนใขในการใช้งาน</h4>
+                </div>
+                <div class="modal-body modal1">
+                  <p>1.รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO</p>
+                  <p>2.รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO</p>
+                  <p>3.รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO</p>
+                  <p>4.รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO</p>
+                  <p>5.รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO</p>
+                  <p>6.รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO</p>
+                  <p>7.รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO</p>
+                  <p>8.รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO รอเขียนกฎที่มีผลผูกพันธ์ทางกฎหมายไว้ดัก IO</p>
+                  <button disabled type="button" onclick="location.href='termsofservice.html'" class="btn btn-outline-dark btn-warning fadeInUp"  style="float:right;" >Learn more</button>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-dark btn-warning btn-lg btn-block fadeInUp" data-toggle="modal" data-target="#ioTable" data-dismiss="modal"><i class="fas fa-check-circle"></i> ยอมรับข้อตกลงเงื่อนใขการใช้</button>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+-->
+          <div id="ioTable" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal2 modal-lg modal-dialog-centered">
+             
+              <div class="modal-content glass">
+                <div class="modal-header">
+                  <h4 class="modal-title"><i class="fas fa-list-ul"></i> IO Data List</h4>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="far fa-times-circle"></i></button>
+                </div>
+                <div class="modal-body modal2">
+                  <div>
+                  <input class="form-control" id="ioInput" type="text" placeholder="🔍Search">
+                  <p> <span class="badge badge-dark">'Type'</span> คือชนิดของ Account ตัวอย่างเช่น IO, Fake Account</p>
+                  
+                  <div class="border table table-striped table-responsive table-wrapper-scroll-x my-custom-scrollbar" id="io_table">
+                            
+                        <div id="io_table"></div>
+                        
+                  </div>
+                  </div>
+                  <div class="modal-footer">
+                        <button type="button" onclick="location.href='https://docs.google.com/spreadsheets/d/e/2PACX-1vTpQsOTqDkmWtr7NG_X97e6NS0BBacVAwQRjQ8qUw52QnmDFpTYuVShUX5eWsCoAcSO_oVzAxBikZ7D/pub?gid=0&single=true&output=csv'" class="btn btn-outline-dark btn-lg btn-block" data-target="#ioTable" ><i class="fas fa-file-download"></i> Download CSV</button>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+           
       <!-- greensock cdn -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-
-      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+      <script src="https://d3js.org/d3.v6.min.js"></script>
       <script type="text/javascript">
+
+
+            $(function(){
+            $('#myModal').modal('show');
+            $('#myModal').modal({backdrop: 'static', keyboard: false})
+            });
+    
+
 
             // navigation starts here
             $("#toggle").click(function () {
@@ -239,13 +430,14 @@
 
             new WOW().init();
 
+
             // Table
                   
             $(document).ready(function(){
              $('#load_data').ready(function(){
              
                   $.ajax({
-                   url:"IODatabase.csv",
+                   url:"https://docs.google.com/spreadsheets/d/e/2PACX-1vTpQsOTqDkmWtr7NG_X97e6NS0BBacVAwQRjQ8qUw52QnmDFpTYuVShUX5eWsCoAcSO_oVzAxBikZ7D/pub?gid=0&single=true&output=csv",
                    dataType:"text",
 
             success:function(data) {
@@ -277,14 +469,184 @@
             $("#ioInput").on("keyup", function() {
                    var value = $(this).val().toLowerCase();
                         $("#io_table tr").filter(function() {
-
-                              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-                         });
+                              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                        });
                   });
             });
 
+/*
+            $(document).ready(function(){
+                  $("#ioInput").on("keyup", function() {
+                   var value = $(this).val().toLowerCase();
+                        $("#io_table tr").filter(function() {
+                              $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+                        });
+                        var table = $("#io_table");
+                              var totalRow = table.find("tbody tr:visible").length;
+                              console.log(totalRow);
+                  });
+            });
+*/      
+/*
+            $(document).ready(function(){
+            $("#ioInput").on("keyup", function() {
+                   var value = $(this).val().toLowerCase();
+                        $("#io_table tr").find(function() {
+                              var table = $("#io_table ");
+                              var totalRow = table.find("tr").length;
+                              console.log(totalRow);
+                              $(document).ready(function() {
+                              $('#ioOutput').html(totalRow);
+                              });
+                        });
+                  });
+            });
+*/
+            
+            /*
+            $(document).ready(function(){
+                  $("#ioInput").on("keyup", function() {
+                   var value = $(this).val().toLowerCase();
+                        $("#io_table tr").filter(function() {
+                              var n = $.includes(value);
+                              alert(n);
+                         });
+                  });
+            });
+            */
+            /*
+            d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vTpQsOTqDkmWtr7NG_X97e6NS0BBacVAwQRjQ8qUw52QnmDFpTYuVShUX5eWsCoAcSO_oVzAxBikZ7D/pub?gid=0&single=true&output=csv').then(makeIO);
+            function makeIO(Se) {
+            var se = Se.map(function(d) {return d.ID + "" + d.DisplayName});
+            se = se.includes("#ioinput");
+            if (se = true){
+                  alert('true');
+            }
+                  
+            }
+            */
+            // Chart
+            d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vTpQsOTqDkmWtr7NG_X97e6NS0BBacVAwQRjQ8qUw52QnmDFpTYuVShUX5eWsCoAcSO_oVzAxBikZ7D/pub?gid=741328053&single=true&output=csv').then(makeSum);
+            function makeSum(Sum) {
+            var sum = Sum.map(function(d) {return d.Sum});
+            sum = sum.slice(0,-5);
+            document.getElementById("sum").innerHTML = sum;
+            }
 
-   </script>
+            d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vTpQsOTqDkmWtr7NG_X97e6NS0BBacVAwQRjQ8qUw52QnmDFpTYuVShUX5eWsCoAcSO_oVzAxBikZ7D/pub?gid=741328053&single=true&output=csv').then(makeTime);
+            function makeTime(Time) {
+            var time = Time.map(function(d) {return d.Time});
+            time = time.slice(0,-5);
+            document.getElementById("time").innerHTML = time;
+            }
+
+            /*
+            d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vTpQsOTqDkmWtr7NG_X97e6NS0BBacVAwQRjQ8qUw52QnmDFpTYuVShUX5eWsCoAcSO_oVzAxBikZ7D/pub?gid=741328053&single=true&output=csv').then(makeDate);
+            function makeDate(Date) {
+            var date= Date.map(function(d) {return d.Date});
+            date = date.slice(0,-5);
+            document.getElementById("date").innerHTML = date;
+            }
+            */
+           
+            d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vTpQsOTqDkmWtr7NG_X97e6NS0BBacVAwQRjQ8qUw52QnmDFpTYuVShUX5eWsCoAcSO_oVzAxBikZ7D/pub?gid=741328053&single=true&output=csv').then(makeFace);
+            function makeFace(Face) {
+            var face = Face.map(function(d) {return d.Count});
+            face = face.slice(0,-5);
+            document.getElementById("face").innerHTML = face;
+            }
+
+            d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vTpQsOTqDkmWtr7NG_X97e6NS0BBacVAwQRjQ8qUw52QnmDFpTYuVShUX5eWsCoAcSO_oVzAxBikZ7D/pub?gid=741328053&single=true&output=csv').then(makeIG);
+            function makeIG(IG) {
+            var ig = IG.map(function(d) {return d.Count});
+            ig = ig.slice(1,-4);
+            document.getElementById("ig").innerHTML = ig;
+            }
+            d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vTpQsOTqDkmWtr7NG_X97e6NS0BBacVAwQRjQ8qUw52QnmDFpTYuVShUX5eWsCoAcSO_oVzAxBikZ7D/pub?gid=741328053&single=true&output=csv').then(makeTwitter);
+            function makeTwitter(Twitter) {
+            var twitter = Twitter.map(function(d) {return d.Count});
+            twitter = twitter.slice(2,-3);
+            document.getElementById("twitter").innerHTML = twitter;
+            }
+
+            d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vTpQsOTqDkmWtr7NG_X97e6NS0BBacVAwQRjQ8qUw52QnmDFpTYuVShUX5eWsCoAcSO_oVzAxBikZ7D/pub?gid=741328053&single=true&output=csv').then(makeYoutube);
+            function makeYoutube(Youtube) {
+            var youtube = Youtube.map(function(d) {return d.Count});
+            youtube = youtube.slice(3,-2);
+            document.getElementById("youtube").innerHTML = youtube;
+            }
+
+            d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vTpQsOTqDkmWtr7NG_X97e6NS0BBacVAwQRjQ8qUw52QnmDFpTYuVShUX5eWsCoAcSO_oVzAxBikZ7D/pub?gid=741328053&single=true&output=csv').then(makeTik);
+            function makeTik(Tik) {
+            var tik = Tik.map(function(d) {return d.Count});
+            tik = tik.slice(4,-1);
+            document.getElementById("tiktok").innerHTML = tik;
+            }
+
+            d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vTpQsOTqDkmWtr7NG_X97e6NS0BBacVAwQRjQ8qUw52QnmDFpTYuVShUX5eWsCoAcSO_oVzAxBikZ7D/pub?gid=741328053&single=true&output=csv').then(makeOt);
+            function makeOt(Ot) {
+            var ot = Ot.map(function(d) {return d.Count});
+            ot = ot.slice(4,-1);
+            document.getElementById("other").innerHTML = ot;
+            }
+
+            d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vTpQsOTqDkmWtr7NG_X97e6NS0BBacVAwQRjQ8qUw52QnmDFpTYuVShUX5eWsCoAcSO_oVzAxBikZ7D/pub?gid=741328053&single=true&output=csv').then(makeChart);
+            function makeChart(ioSum) {
+            var platform = ioSum.map(function(d) {return d.Platform});
+            var count = ioSum.map(function(d) {return d.Count});
+            var ctx = document.getElementById('ioChart').getContext('2d');
+            ctx.height = 100;
+            var ioChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                  labels: platform,
+                  datasets: [{
+                        data: count,
+                        backgroundColor: [
+                        'rgba(3, 120, 252, 0.25)',
+                        'rgba(238, 0, 255, 0.25)',
+                        'rgba(3, 194, 252, 0.25)',
+                        'rgba(252, 3, 3, 0.25)',
+                        'rgba(255, 255, 255, 0.25)',
+                        'rgba(255, 255, 255, 0.12)',
+                        ],
+                        borderColor: [
+                        'rgba(3, 120, 252, 1)',
+                        'rgba(238, 0, 255, 1)',
+                        'rgba(3, 194, 252, 1)',
+                        'rgba(252, 3, 3, 1)',
+                        'rgba(255, 255, 255, 1)',
+                        'rgba(255, 255, 255, 0.5)',
+                        ],
+                        borderWidth: 2
+                  }],
+            
+            },
+            options: {
+
+                  responsive: true,
+                  maintainAspectRatio: true,
+                  aspectRatio: 1.5,
+                  
+                  animation: {
+                        duration: 0,
+                  },
+
+                  legend: {
+                        position: "top",
+                        align: "start",
+                        
+                        labels: {
+                              fontColor: '#9c9c9c',
+                              fontSize: 12,
+                              fontFamily:"'Niramit', sans-serif",
+                        }
+                        
+                  }
+             
+            }})};     
+
+      </script>
 
 </body>
 
