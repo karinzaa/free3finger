@@ -10,6 +10,15 @@ html, body {
       color: #fff !important;
 }
 
+#loader {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      z-index: 1;
+      overflow: visible;
+      background: rgb(0, 0, 0) url('https://i.gifer.com/6oa.gif') no-repeat center center;
+}
+
 p {
       font-family: "Niramit", sans-serif;
 }
@@ -121,6 +130,10 @@ h5.footer {
       padding-bottom: 4.5%;
 }
 
+.round {
+      border-radius: 7px;
+}
+
 
 .dark { 
       background-color:rgba(0, 119, 255);
@@ -223,7 +236,7 @@ h5.footer {
       color: rgb(0, 0, 0) !important;
       border-color: #0000000a !important;
       background: #0000000a !important;
-      font-family: "Sriracha", sans-serif !important;
+      font-family: "Niramit", sans-serif !important;
 }
 
 .form-control:focus {
@@ -371,16 +384,30 @@ nav #menu {
       right: 40px;
       position: fixed;
 }
+@media(max-width: 770px) {
+      nav #menu li {
+            padding-left: 8px;
+            font-size: 20px;
+            display: inline-block;
+            cursor: pointer;
+            font-weight: 300;
+            line-height: 80px;
+            position: relative;
+            transition: all 0.3s ease-out;
+      }
+}
 
-nav #menu li {
-      padding-left: 30px;
-      font-size: 20px;
-      display: inline-block;
-      cursor: pointer;
-      font-weight: 300;
-      line-height: 80px;
-      position: relative;
-      transition: all 0.3s ease-out;
+@media(min-width: 771px) {
+      nav #menu li {
+            padding-left: 30px;
+            font-size: 20px;
+            display: inline-block;
+            cursor: pointer;
+            font-weight: 300;
+            line-height: 80px;
+            position: relative;
+            transition: all 0.3s ease-out;
+      }
 }
 
 nav #menu li span {
@@ -474,22 +501,41 @@ nav #menu li a:hover {
       transform: translate3d(-50%,-50%,0) scale3d(1,1,1)
 }
 
-.close-btn {
-      position: absolute;
-      font-size: 30px;
-      right: 26px;
-      font-weight: 300;
-      z-index: 2;
-      cursor: pointer;
-      top: 4px;
-      line-height: 80px;
+@media(min-width: 730px) {
+      .close-btn {
+            position: absolute;
+            font-size: 0px;
+            right: 26px;
+            font-weight: 300;
+            z-index: 2;
+            cursor: pointer;
+            top: px;
+            line-height: 80px;
+            visibility: hidden;
+            pointer-events: none;
+      }
 }
 
+
+@media(max-width: 729px) {
+      .close-btn {
+            position: absolute;
+            font-size: 30px;
+            right: 26px;
+            font-weight: 300;
+            z-index: 2;
+            cursor: pointer;
+            top: 4px;
+            line-height: 80px;
+            visibility: visible;
+            pointer-events: all;
+      }
+}
 #resize {
       z-index: 1;
       top: 0px;
       position: fixed;
-      background: #0f0f0fe5;
+      background: #0f0f0fe5 url('https://shkspr.mobi/blog/wp-content/uploads/2015/02/loop2.gif') no-repeat center center;
       width: 100%;
       height: 100%;
       visibility: hidden;
@@ -499,32 +545,59 @@ nav #menu li a:hover {
 }
 
 #resize #menu {
-      height: 90px;
+      height: 100%;
       position: absolute;
-      left: 40%;
-      transform: translateX(-40%);
+      left: 32%;
+      top: auto;
+      transform: translateX(-30%);
       text-align: center;
       display: table-cell;
       vertical-align: center;
 }
 
+@media(max-width: 300px) {
+      
+      #resize #menu {
+            height: 100px;
+            position: absolute;
+            left: 10%;
+            top: auto;
+            transform: translateX(-10%);
+            text-align: center;
+            display: table-cell;
+            vertical-align: center;
+      } 
+}
+
 #resize #menu li {
-      display: block;
+      display: flex;
       text-align: center;
       padding: 10% 0%;
-      font-size: 50px;
       min-height: 50px;
-      font-weight: bold;
-      cursor: pointer;
+      cursor: pointer;;
       transition: all 0.25s ease-in-out;
 }
 
+@media(max-width: 300px) {
+
+      #resize #menu li {
+            display: flex;
+            text-align: center;
+            padding: 10% 0%;
+            min-height: 50px;
+            cursor: pointer;
+            transition: all 0.25s ease-in-out;
+      }
+      
+}
+
 #resize li:nth-child(1) {
-      margin-top: 100%;
+      margin-top: 25vh;
 }
 
 #resize #menu li a {
       color: #fff;
+      font-weight: 500;
 }
 
 #resize #menu li a:hover {
@@ -536,7 +609,7 @@ nav #menu li a:hover {
       opacity: 1;
 }
 
-@media(max-width: 768px) {
+@media(max-width: 729px) {
       #toggle {
             visibility: visible;
             opacity: 1;
@@ -548,8 +621,8 @@ nav #menu li a:hover {
             margin-left: 24px;
       }
 
-      #menu a {
-            font-size: 20px;
+      #menu a{
+            font-size: 23px;
             font-weight: 300;
       }
 
@@ -562,7 +635,7 @@ nav #menu li a:hover {
       }
 }
 
-@media(min-width: 768px) {
+@media(min-width: 730px) {
       #resize {
             visibility: hidden !important;
       }

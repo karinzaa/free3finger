@@ -242,19 +242,6 @@
             <!--------------- footer starts here --------------->
             <div class="footer">
                   <div class="container">
-                        <br></br>
-                        <div class="project-nav">
-                              <div class="container">
-                                    <div class="row">
-                                          <div class="col-sm-6 prev" data-wow-delay="0.2s">
-                                                <p class="wow fadeInUp"> <span class="wow fadeInUp list badge badge-pill badge-light circleScaleBtn2"  type="button" onclick="location.href='advance.html'"><i class="fas fa-arrow-circle-left"></i> Advance</span></p>
-                                          </div>
-                                          <div class="col-sm-6 next" data-wow-delay="0.2s">
-                                                <p class="wow fadeInUp"> <span class="wow fadeInUp list badge badge-pill badge-light circleScaleBtn2"  type="button" onclick="location.href='index.html'">Home <i class="fas fa-arrow-circle-right"></i></span></p>
-                                          </div>
-                                    </div>
-                              </div>
-                        </div>
                         <div class="collab">
                               <div class="row">
                                     <div class="col-lg-12">
@@ -586,7 +573,7 @@
             d3.csv('https://docs.google.com/spreadsheets/d/e/2PACX-1vTpQsOTqDkmWtr7NG_X97e6NS0BBacVAwQRjQ8qUw52QnmDFpTYuVShUX5eWsCoAcSO_oVzAxBikZ7D/pub?gid=741328053&single=true&output=csv').then(makeOt);
             function makeOt(Ot) {
             var ot = Ot.map(function(d) {return d.Count});
-            ot = ot.slice(4,-1);
+            ot = ot.slice(5);
             document.getElementById("other").innerHTML = ot;
             }
 
